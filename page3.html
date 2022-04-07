@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Application Form | Real Living Real Estate</title>
+	
+	<style type="text/css">
+		body {
+			background-image: url('neighborhood.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;  
+			background-size: 100% 100%;
+			margin-left: 6%;
+			margin-right: 6%;
+			font-family: Verdana, sans-serif;
+		}
+		
+		.bg-overlay {
+			background: rgb(255, 255, 255, .9);
+			padding: 1% 3% 2%;
+			margin-top: -16px
+		}
+	
+		h1, h5	{
+			font-family: Verdana, sans-serif;
+			text-align: left;
+			color: #001427;
+		}
+		
+		p	{
+			font-family: Verdana, sans-serif;
+			color: #001427;
+			text-align: left;
+		}
+		
+		li	{
+			font-family: Verdana, sans-serif;
+		}
+		
+		fieldset	{
+			border: 2px #733E79 solid;
+			padding: 20px;
+		}
+		
+		legend {
+		  background-color: #733E79;
+		  color: white;
+		  padding: 5px 10px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<h1 style="color: #733E79">REAL LIVING REAL ESTATE</h1>
+	</header>
+	
+	<nav>
+		<ul type="none"; style="padding: 0; overflow: hidden; background-color: #488286">
+			<li style="float: left;"><a href="page1.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none">ABOUT US</a></li>
+			<li style="float: left;"><a href="page2.html" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none">HOME TOUR</a></li>
+			<li style="float: left;"><a href="page3.html" style="display: block; background-color: #39676A; color: white; text-align: center; padding: 14px 16px; text-decoration: none">APPLICATION FORM</a></li>
+		</ul>
+	</nav>
+	
+	<div class="bg-overlay">	
+	<section>
+		<br />
+		<h1 style="display: inline">Application Form</h1><span style="float: right; margin-top: 5px">Search: <input type="search" name="searchbar"></span>
+
+		<form id="application_form" action="mailto:malptagayun@mymail.mapua.edu.ph" method="post" autocomplete="on">
+			<br />
+			
+			<fieldset id="login_info"><legend align="left"><b>LOG IN INFORMATION</b></legend>
+				Email:<br />
+				<input type="email" name="email" size=20 maxlength=30>
+				<br /><br />
+				
+				Username:<br />
+				<input type="text" name="username" size=20 maxlength=15>
+				<br /><br />
+				
+				Password:<br />
+				<input type="password" name="password" size=20 maxlength=15>
+				<br />
+			</fieldset>
+			<br />
+			
+			<fieldset id="personal_info"><legend align="left"><b>PERSONAL INFORMATION</b></legend>
+				Full Name:
+				<br />
+				<input type="text" name="firstname" size=20 maxlength=50>
+				<span style="margin-left: 10px"><input type="text" name="surname" size=20 maxlength=50></span>
+				<br />
+				<span style="color: #3B3B3B; font-size: 13px">First Name</span>
+				<span style="color: #3B3B3B; font-size: 13px; margin-left: 110px">Last Name</span>
+				<br /><br />
+
+				Age:
+				<span style="margin-left: 142px">Birthday:<span>
+				<br />
+				<input type="number" name="age" size=2 maxlength=3>
+				<span style="margin-left: 10px"><input type="date" name="bday" style="width: 165px"></span>
+				<br /><br />
+				
+				Sex:<br />
+				<input type="radio" name="sex" value="sex_male">Male<br />
+				<input type="radio" name="sex" value="sex_female">Female<br />
+				<input type="radio" name="sex" value="sex_intersex">Intersex<br />
+				<br />
+				
+				Gender:<br />
+				<input type="radio" name="gender" value="gender_male">Male<br />
+				<input type="radio" name="gender" value="gender_female">Female<br />
+				<input type="radio" name="gender" value="gender_agender">Agender<br />
+				<input type="radio" name="gender" value="gender_gnc">Gender Non-conforming<br />
+				<input type="radio" name="gender" value="gender_queer">Genderqueer<br />
+				<input type="radio" name="gender" value="gender_variant">Gender Variant<br />
+				<input type="radio" name="gender" value="gender_nonbinary">Non-binary<br />
+				<input type="radio" name="gender" value="gender_trans">Transgender<br />
+				<input type="radio" name="gender" value="gender_declined">I prefer not to say<br />
+				<br />
+				
+				Employment Status:
+				<select name="emp_status" id="emp_status">
+					<option>Select your employment status</option>
+					<option value="employed">Employed</option>
+					<option value="selfempoyed">Self-employed</option>
+					<option value="homemaker">Homemaker</option>
+					<option value="maternity_paternity">Maternity/Paternity leave</option>
+					<option value="unemployed">Unemployed</option>
+					<option value="retired">Retired</option>
+					<option value="unable_to_work">Unable to work</option>
+				</select>
+				<br /><br />
+				
+				Highest Degree:
+				<select name="emp_status" id="emp_status">
+					<option>Select your highest level of education</option>
+					<option value="less_hs">Less than high school diploma (or equivalent)</option>
+					<option value="hs">High school diploma (or equivalent)</option>
+					<option value="some_college">Some college but no degree</option>
+					<option value="associate">Associate Degree (e.g., AA, AS)</option>
+					<option value="bachelors">Bachelor's Degree (e.g., BA, AB, BS)</option>
+					<option value="master">Master's Degree (e.g., MA, MS, MEng, MEd, MWS, MBA)</option>
+					<option value="professional">Professional Degree (e.g., MD, DDS, DVM, LLB, JD)</option>
+					<option value="doctorate">Doctorate Defree (e.g., PhD, EdD)</option>
+				</select>
+			</fieldset>
+			<br />
+			
+			<fieldset id="addr_number"><legend align="left"><b>ADDRESS AND CONTACT NUMBER</b></legend>
+				Address Line 1:<br />
+				<input type="text" name="staddress" size=44 maxlength=100>
+				<br /><br />
+				
+				Address Line 2:<br />
+				<input type="text" name="staddress2" size=44 maxlength=100>
+				<br /><br />
+				
+				City:
+				<span style="margin-left: 130px">State/Province:<span>
+				<br />
+				<input type="text" name="city" size=18 maxlength=30>
+				<span style="margin-left: 10px"><input type="text" name="state_province" size=18 maxlength=30></span>
+				<br /><br />
+				
+				Postal/Zip Code:<br />
+				<input type="text" name="postal_zip" size=18 maxlength=30>
+				<br /><br />
+				
+				Contact Number:<br />
+				<input type="tel" name="number" size=18 maxlength=10>
+			</fieldset>
+			<br />
+			
+			<fieldset id="home_choices"><legend align="left"><b>HOME CHOICES</b></legend>
+				Choose all house building types you like:<br />
+				<input type="checkbox" name="building" value="single_family">Single-family<br />
+				<input type="checkbox" name="building" value="multifamily">Multifamily<br />
+				<input type="checkbox" name="building" value="apartment">Apartment<br />
+				<input type="checkbox" name="building" value="townhouse">Townhouse<br />
+				<input type="checkbox" name="building" value="condo">Condo<br />
+				<input type="checkbox" name="building" value="co_op">Co-op<br /> 
+				<br />
+				
+				Choose all house architecture types you like:<br />
+				<input type="checkbox" name="architecture" value="mansion">Mansion<br />
+				<input type="checkbox" name="architecture" value="colonial">Colonial<br />
+				<input type="checkbox" name="architecture" value="ranch">Ranch<br />
+				<input type="checkbox" name="architecture" value="victorian">Victorian<br />
+				<input type="checkbox" name="architecture" value="mediterranean">Mediterranean<br />
+				<input type="checkbox" name="architecture" value="bungalow">Bungalow<br />
+				<input type="checkbox" name="architecture" value="cape_cod">Cape Cod<br />
+				<input type="checkbox" name="architecture" value="coachman">Coachman<br />
+				<input type="checkbox" name="architecture" value="craftsman">Craftsman<br />
+				<input type="checkbox" name="architecture" value="cottage">Cottage<br />
+				<input type="checkbox" name="architecture" value="farmhouse">Farmhouse<br />
+				<input type="checkbox" name="architecture" value="greek_revival">Greek Revival<br />
+				<br />
+				
+				Select all exterior features your home must have:<br />
+				<input type="checkbox" name="exterior_features" value="guest_quarters">Guest Quarters<br />
+				<input type="checkbox" name="exterior_features" value="storage_building">Storage Building<br />
+				<input type="checkbox" name="exterior_features" value="balcony">Balcony<br />
+				<input type="checkbox" name="exterior_features" value="garden">Garden<br />
+				<input type="checkbox" name="exterior_features" value="pool">Pool<br />
+				<input type="checkbox" name="exterior_features" value="greenhouse">Greenhouse<br />
+				<input type="checkbox" name="exterior_features" value="rooftop">Rooftop<br />
+				<br />
+				
+				Select all specialty rooms your home must have:<br />
+				<input type="checkbox" name="specialty_rooms" value="gym">Gym<br />
+				<input type="checkbox" name="specialty_rooms" value="sauna_room">Sauna Room<br />
+				<input type="checkbox" name="specialty_rooms" value="game_room">Game Room<br />
+				<input type="checkbox" name="specialty_rooms" value="music_room">Music Room<br />
+				<input type="checkbox" name="specialty_rooms" value="study_room">Study Room<br />
+				<input type="checkbox" name="specialty_rooms" value="library">Library<br />
+				<input type="checkbox" name="specialty_rooms" value="home_theater">Home Theater<br />
+				<br />
+				
+				Please specify other house features, rooms, and details you like your house to have:<br />
+				<textarea rows="7" cols="45" name="house_misc" id="house_misc"></textarea>
+				<br /><br />
+				
+				Please specify any location(s) you have in mind for your home:<br />
+				<textarea rows="7" cols="45" name="house_location" id="house_location"></textarea>
+				<br /><br />
+				
+				Price Budget:
+				<select name="price_budget" id="price_budget">
+					<option>Select your budget price</option>
+					<option value="150k_to_180k">$150,000 to $180,000</option>
+					<option value="180k_to_250k">$180,000 to $250,000</option>
+					<option value="250k_to_350k">$250,000 to $350,000</option>
+					<option value="350k_to_500k">$350,000 to $500,000</option>
+					<option value="500k_n_above">$500,000 and above</option>
+				</select>
+				<br /><br />
+				
+				How soon do you need to find a house?<br />
+				<input type="radio" name="find_countdown" value="asap">As soon as possible<br />
+				<input type="radio" name="find_countdown" value="w30days">Within 30 days<br />
+				<input type="radio" name="find_countdown" value="w90days">Within 90 Days<br />
+				<input type="radio" name="find_countdown" value="wyear">Within the year<br />
+				<input type="radio" name="find_countdown" value="not_asap">Not that soon<br />
+			</fieldset>
+			<br />
+			
+			<fieldset id="feedback"><legend align="left"><b>FEEDBACK</b></legend>
+				How did you learn about us?
+				<select name="discovery" id="discovery">
+					<option>Select how you discovered this site</option>
+					<option value="referral">Referral</option>
+					<option value="internet_search">Internet Search</option>
+					<option value="internet_ad">Internet Advertisement</option>
+					<option value="internet_blog">Internet Blog</option>
+					<option value="printed_publication">Printed Publication</option>
+					<option value="other">Other</option>
+				</select>
+				<br /><br />
+				
+				What browser did you use to access this site?
+				<input list="browser" name="browser">
+				<datalist id="browser">
+					<option value="Internet Explorer">
+					<option value="Firefox">
+					<option value="Chrome">
+					<option value="Opera">
+					<option value="Safari">
+					<option value="Microsoft Edge">
+				</datalist>
+				<br /><br />
+				
+				Rate the functionality of our website:<br />
+				<input type="radio" name="functionality" value="excellent">Excellent<br />
+				<input type="radio" name="functionality" value="above_ave">Above Average<br />
+				<input type="radio" name="functionality" value="ave">Average<br />
+				<input type="radio" name="functionality" value="below_ave">Below Average<br />
+				<input type="radio" name="functionality" value="poor">Poor<br />
+				<br />
+				
+				Comments:<br />
+				<textarea rows="7" cols="45" name= "comment" id="comment"></textarea>
+				<br /><br />
+				Tell us how we can improve:<br />
+				<textarea rows="7" cols="45" name="feedback" id="feedback"></textarea>
+			</fieldset>
+			
+			<br />
+			<input type="submit" value="submit">
+			<input type="reset" value="reset">
+		</form>
+	</section>
+	</div>
+	
+	<footer>
+		<h5 style="color: white; text-align: right">© Copyright 2021 - 2022 REAL LIVING Real Estate. All Rights Reserved.</h5>
+	</footer>
+</body>
+
+</html>
